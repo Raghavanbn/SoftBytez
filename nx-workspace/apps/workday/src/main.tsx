@@ -1,8 +1,9 @@
 import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-//import { Auth0Provider } from '@auth0/auth0-react';
 import App from './app/app';
+import { Provider } from 'react-redux';
+import store from './redux/store';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -10,7 +11,10 @@ const root = ReactDOM.createRoot(
 root.render(
   <StrictMode>
     <BrowserRouter>
-        <App />
+        <Provider store={store}>
+            <App />
+        </Provider>
+        
     </BrowserRouter>
 
   </StrictMode>

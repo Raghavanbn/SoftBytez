@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
         <div>
             <ParentLayout/>
             <div className="mx-6 py-10 items-center justify-center"> 
-            <p className="text-prime-blue mt-2.5 text-neutral-400 font-bold text-2xl text-center">
+            <p className="text-prime-color mt-2.5 text-neutral-400 font-bold text-2xl text-center">
             <Typography variant="h4" gutterBottom>
                     Privacy Policy of SoftBytez
               </Typography>

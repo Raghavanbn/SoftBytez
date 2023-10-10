@@ -13,11 +13,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'prime-blue' : '#2596be',
+        'prime-color' : '#2596be',
       },
       backgroundImage: {
-        'laptop': "url('/src/assets/images/laptop.png')",
+        'laptop': "url('/assets/images/laptop.png')",
+        'aboutus1': "url('/assets/images/aboutus.png')",
       },
+      fontFamily: {
+        righteous: ['Righteous', 'cursive'],
+      },
+      
       
     },
     palette: {

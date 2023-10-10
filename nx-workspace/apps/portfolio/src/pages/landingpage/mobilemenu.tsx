@@ -27,7 +27,7 @@ export default function PositionedMenu() {
       >
         <p className='normal-case text-black'>
           <Typography>
-              Menu
+            <span className="font-righteous">Menu</span>
           </Typography>
         </p>
       </Button>
@@ -44,33 +44,28 @@ export default function PositionedMenu() {
         transformOrigin={{
           vertical: 'top',
           horizontal: 'left',
-        }}
+        }}        
       >
         <MenuItem onClick={handleClose}>
             <Typography>
-                <Link to="/">Home</Link> 
+                <Link to="/"><span className="font-righteous">Home</span></Link> 
             </Typography>
         </MenuItem>
         <MenuItem onClick={handleClose}>
             <Typography>
-                <Link to="/who-we-are">Who We Are</Link> 
+                <Link to="/who-we-are"><span className="font-righteous">Who We Are</span></Link> 
             </Typography>
         </MenuItem>
         <MenuItem onClick={handleClose}>
             <Typography>
-                <Link to="/what-we-do">What We Do</Link> 
+                <Link to="/what-we-do"><span className="font-righteous">What We Do</span></Link> 
             </Typography>
         </MenuItem>
         <MenuItem onClick={handleClose}>
             <Typography>
-                <Link to="/contact-us">Contact US</Link>  
+                <Link to="/contact-us"><span className="font-righteous">Contact US</span></Link>  
             </Typography>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-            <Typography>
-                <Link to="/my-account">My Account</Link> 
-            </Typography>
-        </MenuItem>
+        </MenuItem>        
       </Menu>
     </div>
   );

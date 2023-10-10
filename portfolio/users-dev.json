@@ -1,0 +1,11 @@
+{
+    "persons" : [
+        {
+            "name" : "AK Ajith Ks"
+        },
+        {
+            "name" : "BS (Manager)Bob Simpson"
+        }
+    ],
+    "urlLocator" : "https://totalqsr-kiosk--develop-jar3rer2.web.app/store?deviceID=IndiaQATestTablet"
+}

@@ -12,13 +12,13 @@ const ParentFooter = () => {
     return(
         
         <footer
-        className="mt-9 bg-prime-blue text-center text-white dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
+        className="mt-9 bg-prime-color text-center text-white dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
         
         <div className="border-b-2 border-neutral-200 p-6 dark:border-neutral-500">
           <div className="container mx-auto px-10">
             <div className="flex items-center justify-center lg:justify-between">
               <div className="mr-12 hidden lg:block">
-                <span>Get connected with us on social networks:</span>
+              <span>Get connected with us on social networks:</span>
               </div>
               <div className="flex justify-center">
                 <a href="https://www.facebook.com/people/SoftBytez/61551395003618/" className="mr-6">

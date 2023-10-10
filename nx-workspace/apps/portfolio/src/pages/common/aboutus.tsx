@@ -7,14 +7,14 @@ const AboutUs = () => {
         <div>
             <ParentLayout/>
             <div className="mx-6 py-10 items-center justify-center">    
-            <p className="text-prime-blue mt-2.5 text-neutral-400 font-bold text-2xl text-center">
+            <p className="text-prime-color mt-2.5 text-neutral-400 font-bold text-2xl text-center">
             <Typography variant="h4" gutterBottom>
                     SoftBytez
               </Typography>
             </p>    
             <p className="font-bold text-3xl text-left">
                 <Typography gutterBottom>
-                  <strong>Who We Are:</strong> 
+                <span className='font-semibold'>Who We Are:</span> 
                 </Typography>
              </p>
             <p className="font-bold text-2xl text-left">
@@ -26,7 +26,7 @@ const AboutUs = () => {
              </p>
              <p className="font-bold text-3xl text-left">
                 <Typography gutterBottom>
-                  <strong>Our Vision:</strong> 
+                <span className='font-semibold'>Our Vision:</span> 
                 </Typography>
              </p>
              <p className="font-bold text-2xl text-left mt-2.5">
@@ -38,7 +38,7 @@ const AboutUs = () => {
             </p>
             <p className="font-bold text-3xl text-left">
                 <Typography gutterBottom>
-                  <strong>What We Do:</strong> 
+                <span className='font-semibold'>What We Do:</span> 
                 </Typography>
              </p>
              <p className="font-bold text-2xl text-left mt-2.5">
@@ -49,36 +49,36 @@ const AboutUs = () => {
             </p>
             <p className="font-bold text-3xl text-left">
                 <Typography gutterBottom>
-                  <strong>Why Choose Us:</strong> 
+                <span className='font-semibold'>Why Choose Us:</span> 
                 </Typography>
              </p>
              <p className="font-bold text-2xl text-left mt-2.5">
              <Typography gutterBottom>
-                <strong>Innovation:</strong> We stay ahead of the curve by constantly innovating and 
+                <span className='font-semibold'>Innovation:</span> We stay ahead of the curve by constantly innovating and 
                 adapting to emerging trends and technologies.
             </Typography>
             </p>
              <p className="font-bold text-2xl text-left mt-2.5">
              <Typography gutterBottom>
-                <strong>Quality:</strong> We take pride in delivering high-quality products/services 
+             <span className='font-semibold'>Quality:</span> We take pride in delivering high-quality products/services 
                 that exceed expectations.
             </Typography>
             </p>
              <p className="font-bold text-2xl text-left mt-2.5">
              <Typography gutterBottom>
-                <strong>Customer-Centric:</strong> Our customers are at the heart of everything we do.
+             <span className='font-semibold'>Customer-Centric:</span> Our customers are at the heart of everything we do.
                  We listen, understand, and prioritize your needs.
             </Typography>
             </p>
             <p className="font-bold text-3xl text-left">
             <Typography gutterBottom>
-                    <strong>Sustainability:</strong> We are committed to environmentally responsible 
+            <span className='font-semibold'>Sustainability:</span> We are committed to environmentally responsible 
                     practices and sustainable business growth.
                 </Typography>
              </p>
              <p className="font-bold text-3xl text-left">
                 <Typography gutterBottom>
-                  <strong>Our Team:</strong> 
+                <span className='font-semibold'>Our Team:</span> 
                 </Typography>
              </p>
              <p className="font-bold text-2xl text-left mt-2.5">
@@ -89,7 +89,7 @@ const AboutUs = () => {
             </p>
             <p className="font-bold text-3xl text-left">
                 <Typography gutterBottom>
-                  <strong>Join Us on Our Journey:</strong> 
+                <span className='font-semibold'>Join Us on Our Journey:</span> 
                 </Typography>
              </p>
             <p className="font-bold text-3xl text-left">

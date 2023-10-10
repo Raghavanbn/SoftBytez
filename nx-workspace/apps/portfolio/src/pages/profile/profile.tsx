@@ -33,7 +33,7 @@ const Profile = () => {
       .then((response) => response.json())
       .then((responseData) => {
         // Handle the response from the back-end
-        console.log('Response from Java:', responseData);
+       
       })
       .catch((error) => {
         console.error('Error sending data to Java:', error);
@@ -41,8 +41,7 @@ const Profile = () => {
   };
 
  
-  const createUser = () => {
-   
+  const createUser = () => {  
 
 
     const timestamp = getValues().dateOfBirth; // Replace with your timestamp
@@ -64,7 +63,7 @@ const Profile = () => {
     })
       .then((response) => response.json())
       .then((responseData) => {
-        console.log('Response from Java:', responseData);
+        
         reset();
       })
       .catch((error) => {
@@ -86,17 +85,6 @@ const Profile = () => {
         isActive : false // checkbox
     }  
 }); 
-
-
-
- 
-  
-  
-
-
-
-
-
 
   const titleTypes = [
     { code: 'Mr', label: 'Mr'},

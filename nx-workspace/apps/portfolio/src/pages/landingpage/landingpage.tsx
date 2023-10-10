@@ -1,14 +1,14 @@
 import { Typography } from '@mui/material';
 
-import AboutUs1 from '../../assets/images/aboutus1.png';
-import AboutUs2 from '../../assets/images/aboutus2.png';
-import AboutUs3 from '../../assets/images/aboutus3.png';
-import PG1 from '../../assets/images/pg1.png';
-import PG2 from '../../assets/images/pg2.png';
-import PG3 from '../../assets/images/pg3.png';
-import PG4 from '../../assets/images/pg4.png';
-import Video from '../../assets/videos/galVideo1.mp4'
-import Video1 from '../../assets/videos/galVideo2.mp4'
+import AboutUs1 from '/assets/images/aboutus1.png';
+import AboutUs2 from '/assets/images/aboutus2.png';
+import AboutUs3 from '/assets/images/aboutus3.png';
+import PG1 from '/assets/images/pg1.png';
+import PG2 from '/assets/images/pg2.png';
+import PG3 from '/assets/images/pg3.png';
+import PG4 from '/assets/images/pg4.png';
+import Video from '/assets/videos/galVideo1.mp4'
+import Video1 from '/assets/videos/galVideo2.mp4'
 import ParentLayout from './parentlayout';
 
 const LandingScreen = () => {
@@ -17,26 +17,23 @@ const LandingScreen = () => {
 
       <section>
         <ParentLayout/>
+        <header>
+          <p className='text-prime-color mt-6 text-neutral-400 text-2xl text-center'>          
+            <Typography  variant="h4" gutterBottom>
+               <span className='font-righteous'> We make technology accessible! </span>
+            </Typography>  
+          </p>           
+        </header>       
+
       <div
-        className="mt-6 relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center h-[32rem] bg-laptop">
-       
-          <div
-            className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed">
-              <div className="flex h-full items-center justify-center">
-                  <div className="text-black">
-                    <h4 className="mb-6 text-xl font-semibold ">We make technology accessible!</h4>
-                    <h2 className="mb-4 text-4xl font-semibold text-justify">Professional</h2>     
-                    <h2 className="mb-4 text-4xl font-semibold text-justify">Technology</h2>
-                    <h2 className="mb-4 text-4xl font-semibold text-justify">Assistance</h2>               
-                  </div>
-              </div>
-          </div>
+        className="mt-6 relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center h-[32rem] bg-laptop">       
+          <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"></div>
 
       </div> 
         <header>
-            <p className="text-prime-blue mt-6 text-neutral-400 font-bold text-2xl text-center">
-            <Typography variant="h4" gutterBottom>
-                About Us
+            <p className="text-prime-color mt-6 text-neutral-400 text-2xl text-center">
+            <Typography  variant="h4" gutterBottom>
+               <span className='font-righteous'> About Us </span>
             </Typography>
             </p>
         </header> 
@@ -46,8 +43,8 @@ const LandingScreen = () => {
                 <img className="h-48 w-full object-cover md:h-full md:w-48" src={AboutUs1} alt="Technical Experience"/>
               </div>
               <div className="p-8">
-                <div className="uppercase tracking-wide text-sm text-center font-semibold">
-                    Technical Experience
+                <div className="uppercase tracking-wide text-sm text-center ">
+                <span className='font-righteous'>Technical Experience </span>
                 </div>                
                     <p className="mt-2">We are well-versed in a variety of operating systems, networks, and databases. 
                     We work with just about any technology that a small business would encounter. 
@@ -63,8 +60,8 @@ const LandingScreen = () => {
                 <img className="h-48 w-full object-cover md:h-full md:w-48" src={AboutUs2} alt="High ROI"/>
               </div>
               <div className="p-8">
-                <div className="uppercase tracking-wide text-sm text-center font-semibold">
-                    High ROI
+                <div className="uppercase tracking-wide text-sm text-center">
+                <span className='font-righteous'>High ROI </span>
                 </div>                
                      <p className="mt-2">Do you spend most of your IT budget on maintaining 
                         your current system? Many companies find that constant maintenance eats into 
@@ -81,8 +78,8 @@ const LandingScreen = () => {
                 <img className="h-48 w-full object-cover md:h-full md:w-48" src={AboutUs3} alt="Satisfaction Guaranteed"/>
               </div>
               <div className="p-8">
-                <div className="uppercase tracking-wide text-sm text-center font-semibold">
-                    Satisfaction Guaranteed
+                <div className="uppercase tracking-wide text-sm text-center">
+                <span className='font-righteous'>Satisfaction Guaranteed </span>
                 </div>                
                     <p className="mt-2">The world of technology can be fast-paced and scary. 
                         That's why our goal is to provide an experience that is tailored to your 
@@ -94,9 +91,9 @@ const LandingScreen = () => {
         </section> 
 
         <header>
-            <p className="text-prime-blue mt-9 text-neutral-400 font-bold text-2xl text-center">
+            <p className="text-prime-color mt-9 text-neutral-400 text-2xl text-center">
             <Typography variant="h4" gutterBottom>
-                  Gallery
+              <span className='font-righteous'> Gallery </span>
               </Typography>
             </p>
         </header>

@@ -5,11 +5,12 @@ import Footer from '../pages/common/parentfooter';
 import MenuHeader from '../pages/common/menuHeader';
 
 
+
 export function App() {  
   return (
     <div>
-       <Header/>
-       <MenuHeader/>       
+       <Header/>   
+       <MenuHeader/>
        <Footer/>
       
     </div>

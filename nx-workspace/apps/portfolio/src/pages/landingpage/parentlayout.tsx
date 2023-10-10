@@ -10,26 +10,26 @@ const ParentLayout = () => {
         <div className='flex flex-row space-x-6 hidden md:block md:flex md:flex-row'> 
            
                 <Typography>
-                    <Link to="/">Home</Link> 
+                    <Link to="/"><span className='font-righteous font-normal'>Home</span></Link> 
                 </Typography>
                 <Typography>
-                    <Link to="/who-we-are">Who We Are</Link> 
+                    <Link to="/who-we-are"><span className='font-righteous'>Who We Are</span></Link> 
                 </Typography>
                 <Typography>
-                    <Link to="/what-we-do">What We Do</Link> 
+                    <Link to="/what-we-do"><span className='font-righteous'>What We Do</span></Link> 
                 </Typography>
                 <Typography>
-                    <Link to="/contact-us">Contact US</Link> 
+                    <Link to="/contact-us"><span className='font-righteous'>Contact US</span></Link> 
                 </Typography>
-                <Typography>
+                {/* <Typography>
                     <Link to="/blog">Blog</Link> 
-                </Typography>                                    
+                </Typography>                                     */}
             
         </div>
         <div className='block md:hidden'>
                 <PositionedMenu/>
             </div>
-        <div className='bg-prime-blue h-0.5 w-2/3 mt-2'></div>        
+        <div className='bg-prime-color h-0.5 w-2/3 mt-2'></div>        
     </div>
         
     );

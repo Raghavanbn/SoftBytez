@@ -13,7 +13,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'prime-blue' : '#2596be',
+        'prime-color' : '#2596be',
       },
     },
   },

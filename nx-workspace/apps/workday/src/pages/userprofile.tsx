@@ -1,13 +1,18 @@
 // src/components/UserProfile.js
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 
-function UserProfile() {
-  const { isAuthenticated, getAccessTokenSilently, user, } = useAuth0();
-  const [userInfo, setUserInfo] = useState(null);
+//redux- code
+import { useDispatch, useSelector  } from 'react-redux';
+import RootState  from '../redux/RootState';
 
- 
+function UserProfile() {
+  const { isAuthenticated, getAccessTokenSilently } = useAuth0(); 
+  
+  //redux- code
+  const dispatch = useDispatch();
+  const userDetails = useSelector((state: RootState) => state.user.user);
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -19,26 +24,27 @@ function UserProfile() {
               Authorization: `Bearer ${accessToken}`,
             },
           });
-          const data = await response.json();
-          setUserInfo(data);
+          const data = await response.json();          
+          // redux-code
+          const user = data;
+          dispatch({ type: 'SET_USER', payload: user });
+
         } catch (error) {
           console.error('Error fetching user info:', error);
         }
       })();
     }
-  }, [isAuthenticated, getAccessTokenSilently]);
+  }, [isAuthenticated, getAccessTokenSilently, dispatch]);
 
   // Render the user profile data once it's available
-  if (userInfo) {
+  
     return (
-      <div>
-        <h2>Welcome, {user?.name}</h2>
+      <div>        
+        <h3> Hello, {userDetails?.name}</h3>
         {/* Display other user information */}
       </div>
     );
-  } else {
-    return <div>Loading user profile...</div>;
-  }
+  
 }
 
 export default UserProfile;

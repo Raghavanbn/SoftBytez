@@ -9,6 +9,8 @@ const PrivateRoute: React.FC = () => {
   if (!isAuthenticated) {
     navigate('/');
     return null; // Redirect to the home page if not authenticated
+  } else{
+    navigate('/profile');
   }
 
   return <Outlet />;
